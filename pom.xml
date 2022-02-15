@@ -73,8 +73,12 @@
                     <version>${jsf-myfaces.version}</version>
                     <scope>runtime</scope>
                 </dependency>
-            </dependencies>
-        </profile>
+            </dependencies> 
+	<properties>
+                 <maven.compiler.source>1.6</maven.compiler.source>
+                 <maven.compiler.target>1.6</maven.compiler.target>
+         </properties>	 
+     </profile> 
         <profile>
             <!-- Active adding -Djsf=ri when execute maven goals. -->
             <id>jsf-ri</id>
